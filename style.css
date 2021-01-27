@@ -1,4 +1,5 @@
 body {
+    height: auto;
     background-color: darkolivegreen;
     display: flex;
     flex-direction: row;
@@ -13,8 +14,14 @@ h2, h3 {
     background-color: brown;
     color: peachpuff;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 10px 5px 10px 5px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
 }
 
 .main {
@@ -22,42 +29,47 @@ h2, h3 {
     background-color: peachpuff;
     border: 5px solid brown;
     border-radius: 25px;
-    margin: 10px;
+    margin: 5px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .left {
-    width: 30%;
+    width: 31%;
+    justify-content: flex-start;
 }
 
 .center {
-    flex: 1 1 auto;
     justify-content: flex-start;
 }
 
 .right {
     width: 30%;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 10px;
+    justify-content: flex-start;
 }
 
-#bio {
-    border: 5px solid brown;
-    border-radius: 25px;
+.bio {
+    border-radius: 10px;
+    padding: 10px;
     width: 100%;
-    height: 100%;
 }
 
 .islebio {
+    height: 20%;
     border: 5px solid brown;
-    border-radius: 25px;
-    padding: 15px 10px 30px 10px;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 10px;
+}
+
+.vil {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .lee, .flag {
@@ -66,8 +78,8 @@ h2, h3 {
 }
 .villager {
     width: 40%;
-    margin: 10px 5px 10px 5px;
     border-radius: 25px;
+    align-items: flex-start;
 }
 
 .banner {
